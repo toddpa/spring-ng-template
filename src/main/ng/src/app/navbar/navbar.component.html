@@ -1,0 +1,45 @@
+<nav class="navbar navbar-light navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">{{ title}}</a>
+
+    <!-- How To: Create a collapse menu or the nav-bar
+      bind the data target
+      data-target="#navmenu"
+      aria-controls="navmenu"
+    -->
+    <button class="navbar-toggler"
+      (click)="isCollapsed = !isCollapsed"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navmenu"
+      aria-controls="navmenu"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- How To: Create a collapse menu or the nav-bar
+       [ngbCollapse]="isCollapsed"
+    -->
+    <div class="collapse navbar-collapse" id="navmenu" [ngbCollapse]="isCollapsed">
+      <ul class="nav navbar-nav mr-auto">
+        <li class="nav-item" role="presentation" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+          <a class="nav-link active" [routerLink]="['/learn']" >Learn</a>
+        </li>
+        <li class="nav-item" role="presentation" routerLinkActive="active">
+          <a class="nav-link" [routerLink]="['/progress']">Progress</a>
+        </li>
+        <li class="nav-item" role="presentation" routerLinkActive="active">
+          <a class="nav-link" [routerLink]="['/create']">Create</a>
+        </li>
+        <li class="nav-item" role="presentation" routerLinkActive="active">
+          <a class="nav-link" [routerLink]="['/orders']">Orders</a>
+        </li>
+      </ul>
+      <form class="form-inline" (ngSubmit)="onSubmit()">
+        <input class="form-control mr-sm-2" type="search" name="search" placeholder="Search" aria-label="search">
+        <button class="btn btn-outline-success btn btn-outline-success my-2 my-sm-0" type="submit" (click)="home()">Login</button>
+      </form>
+    </div>
+  </div>
+</nav>

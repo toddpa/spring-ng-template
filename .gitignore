@@ -1,0 +1,67 @@
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# ANGULAR PROJECT EXCLUSIONS
+# compiled output
+src/main/ui/dist
+src/main/ui/tmp
+src/main/ui/out-tsc
+
+# dependencies
+/src/main/ui/node_modules
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+src/main/ui/.sass-cache
+src/main/ui/connect.lock
+src/main/ui/coverage
+src/main/ui/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+src/main/ui/typings
+
+# System Files
+.DS_Store
+Thumbs.db
+src/main/ng/node_modules
+src/main/resources/static
+src/main/ng/bss-export
