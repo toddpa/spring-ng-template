@@ -30,11 +30,19 @@
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-security -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+			<version>2.0.6.RELEASE</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -59,7 +67,7 @@
 				</executions>
 				<configuration>
 					<executable>ng</executable>
-					<workingDirectory>src/main/ui</workingDirectory>
+					<workingDirectory>src/main/ng</workingDirectory>
 					<arguments>
 						<argument>build</argument>
 					</arguments>
